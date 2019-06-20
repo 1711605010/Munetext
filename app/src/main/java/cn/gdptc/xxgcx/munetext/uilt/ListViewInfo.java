@@ -1,12 +1,21 @@
 package cn.gdptc.xxgcx.munetext.uilt;
 
 public class ListViewInfo {
-    private String content;
+    private String content,text;
     private int ImageId;
 
-    public ListViewInfo(int imageId,String content) {
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public ListViewInfo(int imageId, String content, String text) {
         this.content = content;
-        ImageId = imageId;
+       this.ImageId = imageId;
+        this.text=text;
   }
 
     public String getContent() {

@@ -48,20 +48,23 @@ public class ListViewAdapter  extends BaseAdapter {
         convertView = LayoutInflater.from(context).inflate(R.layout.listview_home_item, null);
         ViewHolder viewHolder = new ViewHolder(convertView);
         viewHolder.title.setText(listViewInfo.getContent());
+        viewHolder.text.setText(listViewInfo.getText());
         viewHolder.img.setImageResource(listViewInfo.getImageId());
         return convertView;
     }
 
     public static class ViewHolder {
         public View rootView;
-        public TextView title;
+        public TextView title,text;
         public ImageView img;
 
 
         public ViewHolder(View rootView) {
             this.rootView = rootView;
             this.title = (TextView) rootView.findViewById(R.id.tv_home_title);
+            this.text = (TextView) rootView.findViewById(R.id.tv_home_title2);
             this.img = (ImageView) rootView.findViewById(R.id.img_home_title);
+
 
         }
     }

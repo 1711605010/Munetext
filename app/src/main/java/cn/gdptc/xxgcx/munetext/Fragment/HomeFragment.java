@@ -108,15 +108,15 @@ public class HomeFragment extends Fragment {
         context = getActivity();
         listView = (ListView) view.findViewById(R.id.listView);
         listViewInfos = new LinkedList<ListViewInfo>();
-        listViewInfos.add(new ListViewInfo(R.drawable.xiaren, "蒜香糖醋虾仁"));
-        listViewInfos.add(new ListViewInfo(R.drawable.jikuai, "香辣炸鸡块"));
-        listViewInfos.add(new ListViewInfo(R.drawable.danta, "栗子蛋挞"));
-        listViewInfos.add(new ListViewInfo(R.drawable.pinggu, "干锅平菇"));
-        listViewInfos.add(new ListViewInfo(R.drawable.jizhua, "鹌鹑蛋烧鸡爪"));
-        listViewInfos.add(new ListViewInfo(R.drawable.jirou, "蔬菜鸡胸肉"));
-        listViewInfos.add(new ListViewInfo(R.drawable.jizhengu, "爽口金针菇"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
+        listViewInfos.add(new ListViewInfo(R.drawable.xiaren, "蒜香糖醋虾仁","来自大海的生物都含有丰富的钙源，特别是海虾，好吃营养丰富做法又很多，最通常的做法就是"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jikuai, "香辣炸鸡块","香辣炸鸡块，不管大人小孩，都喜欢吃，外面买不仅贵还不放心，自己炸实惠，放心油，吃的香"));
+        listViewInfos.add(new ListViewInfo(R.drawable.danta, "栗子蛋挞","如果你刚入手烤箱，就做这个吧！百分百成功，简单到不能再简单了，全程只需要一个两杯、一"));
+        listViewInfos.add(new ListViewInfo(R.drawable.pinggu, "干锅平菇","喜欢吃一些菌菇类的食物，不论怎么烧法，都十分的鲜香美味。这次用干锅的方式，有点重口味"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jizhua, "鹌鹑蛋烧鸡爪","鸡爪属于筋多肉少的类型，含有丰富的钙质及胶原蛋白，多吃不但能软化血管，同时具有美容功"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jirou, "蔬菜鸡胸肉","随着人们生活水平的不断提高，食物不断推新，很多小伙伴在美食面前就不禁不住诱惑了，在美"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jizhengu, "爽口金针菇","今天做的这道凉拌金针菇非常爽口，更是“爱辣星人”的福音。剁好的辣椒圈用热油一泼，再配"));
+        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
+        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
         listViewAdapter = new ListViewAdapter((LinkedList<ListViewInfo>) listViewInfos, context);
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
