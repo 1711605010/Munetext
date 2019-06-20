@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 
@@ -20,6 +21,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import cn.gdptc.xxgcx.munetext.Activity.CakeActivity;
+import cn.gdptc.xxgcx.munetext.Activity.ColdActivity;
 import cn.gdptc.xxgcx.munetext.Activity.FoodActivity;
 import cn.gdptc.xxgcx.munetext.Activity.RakeActivity;
 import cn.gdptc.xxgcx.munetext.Adapter.ListViewAdapter;
@@ -43,6 +46,7 @@ public class HomeFragment extends Fragment {
     private ImageButton imageButton;
     private ArrayList<String> list;
 
+    private LinearLayout ll_liangcai,ll_hongbei;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -64,22 +68,38 @@ public class HomeFragment extends Fragment {
         });
 
 
-        infoList = new ArrayList<RecyclerViewInfo>();
-        infoList.add(new RecyclerViewInfo(R.drawable.liangcai, "凉菜"));
-        infoList.add(new RecyclerViewInfo(R.drawable.hongbei, "烘培"));
-        infoList.add(new RecyclerViewInfo(R.drawable.sucai, "素菜"));
-        infoList.add(new RecyclerViewInfo(R.drawable.dangao, "蛋糕"));
-        infoList.add(new RecyclerViewInfo(R.drawable.xican, "西餐"));
-        infoList.add(new RecyclerViewInfo(R.drawable.cai, "下饭菜"));
-        infoList.add(new RecyclerViewInfo(R.drawable.chuancai, "川菜"));
-        infoList.add(new RecyclerViewInfo(R.drawable.mianshi, "面食"));
-        infoList.add(new RecyclerViewInfo(R.drawable.qingdan, "清淡"));
-        infoList.add(new RecyclerViewInfo(R.drawable.fenlei2, "全部分类"));
-        myRecyclerViewAdapter = new MyRecyclerViewAdapter(infoList, getActivity());
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 5);
-        recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(myRecyclerViewAdapter);
+        ll_liangcai = view.findViewById(R.id.ll_liangcai);
+        ll_hongbei = view.findViewById(R.id.ll_hongbei);
+        ll_liangcai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ColdActivity.class);
+                startActivity(intent);
+            }
+        });
+        ll_hongbei.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CakeActivity.class);
+                startActivity(intent);
+            }
+        });
+//        infoList = new ArrayList<RecyclerViewInfo>();
+//        infoList.add(new RecyclerViewInfo(R.drawable.liangcai, "凉菜"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.hongbei, "烘培"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.sucai, "素菜"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.dangao, "蛋糕"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.xican, "西餐"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.cai, "下饭菜"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.chuancai, "川菜"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.mianshi, "面食"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.qingdan, "清淡"));
+//        infoList.add(new RecyclerViewInfo(R.drawable.fenlei2, "全部分类"));
+//        myRecyclerViewAdapter = new MyRecyclerViewAdapter(infoList, getActivity());
+//        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 5);
+//        recyclerView.setLayoutManager(gridLayoutManager);
+//        recyclerView.setAdapter(myRecyclerViewAdapter);
 
 
 

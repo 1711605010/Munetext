@@ -37,6 +37,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
         View view = LayoutInflater.from(context).inflate(R.layout.recyclerview_item,null);
         MyRecyclerViewHolder viewHolder = new MyRecyclerViewHolder(view);
+
         return viewHolder;
     }
 
@@ -45,6 +46,12 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         holder.logo.setImageResource(infoList.get(position).getLogo());
         holder.tvContext.setText(infoList.get(position).getContext());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,ColdActivity.class);
+            }
+        });
     }
 
     @Override
