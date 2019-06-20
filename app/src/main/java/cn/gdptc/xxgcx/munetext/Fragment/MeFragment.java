@@ -47,8 +47,8 @@ public class MeFragment extends Fragment {
         listViewInfos.add(new MeListViewInfo(R.drawable.shoucang,"我的收藏",R.drawable.youjiantou));
         listViewInfos.add(new MeListViewInfo(R.drawable.liulan,"浏览记录",R.drawable.youjiantou));
         listViewInfos.add(new MeListViewInfo(R.drawable.cai,"sss",R.drawable.youjiantou));
-        listViewInfos.add(new MeListViewInfo(R.drawable.cai,"sss",R.drawable.youjiantou));
-        listViewInfos.add(new MeListViewInfo(R.drawable.dianzan,"sss",R.drawable.youjiantou));
+        listViewInfos.add(new MeListViewInfo(R.drawable.shezhi,"设置",R.drawable.youjiantou));
+        listViewInfos.add(new MeListViewInfo(R.drawable.dianzan,"点赞",R.drawable.youjiantou));
         listViewInfos.add(new MeListViewInfo(R.drawable.lianxi,"联系我们",R.drawable.youjiantou));
         listViewAdapter = new MeListViewAdapter((LinkedList<MeListViewInfo>) listViewInfos,context);
         listView.setAdapter(listViewAdapter);

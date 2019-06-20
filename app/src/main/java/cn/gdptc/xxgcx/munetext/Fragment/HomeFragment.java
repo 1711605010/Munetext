@@ -84,16 +84,17 @@ public class HomeFragment extends Fragment {
 
 
 
+
         context = getActivity();
         listView = (ListView) view.findViewById(R.id.listView);
         listViewInfos = new LinkedList<ListViewInfo>();
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
+        listViewInfos.add(new ListViewInfo(R.drawable.xiaren, "蒜香糖醋虾仁"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jikuai, "香辣炸鸡块"));
+        listViewInfos.add(new ListViewInfo(R.drawable.danta, "栗子蛋挞"));
+        listViewInfos.add(new ListViewInfo(R.drawable.pinggu, "干锅平菇"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jizhua, "鹌鹑蛋烧鸡爪"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jirou, "蔬菜鸡胸肉"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jizhengu, "爽口金针菇"));
         listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
         listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss"));
         listViewAdapter = new ListViewAdapter((LinkedList<ListViewInfo>) listViewInfos, context);

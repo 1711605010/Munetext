@@ -1,17 +1,21 @@
 package cn.gdptc.xxgcx.munetext.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
+import cn.gdptc.xxgcx.munetext.Activity.ColdActivity;
+import cn.gdptc.xxgcx.munetext.Fragment.HomeFragment;
 import cn.gdptc.xxgcx.munetext.R;
 import cn.gdptc.xxgcx.munetext.uilt.RecyclerViewInfo;
 
@@ -20,9 +24,11 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     private List<RecyclerViewInfo> infoList;
     private Context context;
 
+
     public MyRecyclerViewAdapter(List<RecyclerViewInfo> infoList, Context context) {
         this.infoList = infoList;
         this.context = context;
+
     }
 
     @NonNull
@@ -46,6 +52,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         return infoList.size();
     }
 
+
     public class MyRecyclerViewHolder extends RecyclerView.ViewHolder {
         private ImageView logo;
         private TextView tvContext;
@@ -56,7 +63,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
             logo = (ImageView) itemView.findViewById(R.id.img_title);
             tvContext = (TextView) itemView.findViewById(R.id.tv_title);
 
-
         }
+
     }
 }
