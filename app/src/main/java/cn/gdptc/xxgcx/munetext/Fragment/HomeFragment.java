@@ -108,7 +108,7 @@ public class HomeFragment extends Fragment {
         context = getActivity();
         listView = (ListView) view.findViewById(R.id.listView);
         listViewInfos = new LinkedList<ListViewInfo>();
-        listViewInfos.add(new ListViewInfo(R.drawable.xiaren, "蒜香糖醋虾仁","来自大海的生物都含有丰富的钙源，特别是海虾，好吃营养丰富做法又很多，最通常的做法就是"));
+        listViewInfos.add(new ListViewInfo(R.drawable.jichi_1, "蜜汁鸡翅","蜜汁鸡翅一直以来都是我的心头大爱，香嫩口感带来抵挡不住的美味诱惑，色香味俱全，营养又"));
         listViewInfos.add(new ListViewInfo(R.drawable.jikuai, "香辣炸鸡块","香辣炸鸡块，不管大人小孩，都喜欢吃，外面买不仅贵还不放心，自己炸实惠，放心油，吃的香"));
         listViewInfos.add(new ListViewInfo(R.drawable.danta, "栗子蛋挞","如果你刚入手烤箱，就做这个吧！百分百成功，简单到不能再简单了，全程只需要一个两杯、一"));
         listViewInfos.add(new ListViewInfo(R.drawable.pinggu, "干锅平菇","喜欢吃一些菌菇类的食物，不论怎么烧法，都十分的鲜香美味。这次用干锅的方式，有点重口味"));
