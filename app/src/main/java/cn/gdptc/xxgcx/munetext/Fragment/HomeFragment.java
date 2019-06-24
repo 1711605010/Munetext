@@ -117,7 +117,7 @@ public class HomeFragment extends Fragment {
         listViewInfos.add(new ListViewInfo(R.drawable.jizhengu, "爽口金针菇","今天做的这道凉拌金针菇非常爽口，更是“爱辣星人”的福音。剁好的辣椒圈用热油一泼，再配"));
         listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
         listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
-        listViewAdapter = new ListViewAdapter((LinkedList<ListViewInfo>) listViewInfos, context);
+        listViewAdapter = new ListViewAdapter((List<ListViewInfo>) listViewInfos, context);
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -21,11 +21,6 @@ import q.rorbin.verticaltablayout.VerticalTabLayout;
  * A simple {@link Fragment} subclass.
  */
 public class ClassifyFragment extends Fragment {
-    private View view,view1,view2,view3,view4,view5,view6,view7;
-    private VerticalTabLayout tabLayout;
-    private ViewPager viewPager;
-    private LayoutInflater layoutInflater;
-    private List<String> mTitleList = new ArrayList<>();
     public ClassifyFragment() {
         // Required empty public constructor
     }
@@ -35,20 +30,12 @@ public class ClassifyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_classify,container,false);
-        initView();
-        initViewPager();
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_classify,container,false);
+
         return view;
     }
-    private void initView() {
 
 
-    }
-    private void initViewPager() {
-
-
-
-    }
 
 
 

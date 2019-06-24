@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity {
         String PS = intent.getStringExtra("PS");
         if ( PS != null) {
             radioGroup.check(R.id.rb_me);
+
         }
+
         initView();
         initViewPager();
         initListener();
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         radioGroup.check(R.id.rb_video);
-                        tv_main_title.setText("首页");
+                        tv_main_title.setText("视频");
                         break;
                     case 2:
                         radioGroup.check(R.id.rb_classify);

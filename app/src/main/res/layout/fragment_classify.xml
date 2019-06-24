@@ -11,7 +11,7 @@
     android:orientation="horizontal">
 
     <q.rorbin.verticaltablayout.VerticalTabLayout
-        android:id="@+id/tabl_classify"
+        android:id="@+id/vtabLayout"
         android:layout_width="66dp"
         android:layout_height="match_parent"
         android:background="#EDEDED"
@@ -23,13 +23,14 @@
         app:tab_mode="scrollable">
 
     </q.rorbin.verticaltablayout.VerticalTabLayout>
-    <com.example.dell.myverticaltablayout.VerticalPager
+
+    <fr.castorflex.android.verticalviewpager.VerticalViewPager
         android:id="@+id/viewpager"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="4" >
+        android:layout_weight="4">
 
-    </com.example.dell.myverticaltablayout.VerticalPager>
+    </fr.castorflex.android.verticalviewpager.VerticalViewPager>
 
 </LinearLayout>
 

@@ -1,4 +1,4 @@
 package cn.gdptc.xxgcx.munetext.Adapter;
 
-public class VTabLayoutAdapter  {
+public class StepAdapter {
 }

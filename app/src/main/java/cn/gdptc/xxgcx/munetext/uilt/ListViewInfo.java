@@ -1,6 +1,7 @@
 package cn.gdptc.xxgcx.munetext.uilt;
 
 public class ListViewInfo {
+    public int logo;
     private String content,text;
     private int ImageId;
 
