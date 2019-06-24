@@ -20,9 +20,7 @@ public class CakeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cake);
-        listView = (ListView)findViewById(R.id.list_cake);
-        CakeListViewAdapter listViewAdapter=new  CakeListViewAdapter(listViewInfos,context);
-        listView.setAdapter(listViewAdapter);
+
 
     }
 

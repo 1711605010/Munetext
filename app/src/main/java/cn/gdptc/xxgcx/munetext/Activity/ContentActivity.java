@@ -59,11 +59,11 @@ public class ContentActivity extends Activity {
 
                             adapter.notifyDataSetChanged();
                         }else{
-                            Toast.makeText(ContentActivity.this, "天天想着吃屎，找不到啊", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ContentActivity.this, "找不到你输入的信息", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }else{
-                    Toast.makeText(ContentActivity.this, "天天想着吃屎，找不到啊", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ContentActivity.this, "找不到你输入的信息", Toast.LENGTH_SHORT).show();
                 }
 
             }
