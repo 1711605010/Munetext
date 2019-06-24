@@ -1,7 +1,8 @@
-package cn.gdptc.xxgcx.munetext;
+package cn.gdptc.xxgcx.munetext.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import cn.gdptc.xxgcx.munetext.R;
 
 public class LoginActivity extends Activity {
 

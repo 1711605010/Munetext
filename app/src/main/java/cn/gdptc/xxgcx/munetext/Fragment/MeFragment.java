@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -16,11 +15,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-import cn.gdptc.xxgcx.munetext.Adapter.ListViewAdapter;
 import cn.gdptc.xxgcx.munetext.Adapter.MeListViewAdapter;
-import cn.gdptc.xxgcx.munetext.LoginActivity;
+import cn.gdptc.xxgcx.munetext.Activity.LoginActivity;
 import cn.gdptc.xxgcx.munetext.R;
-import cn.gdptc.xxgcx.munetext.uilt.ListViewInfo;
 import cn.gdptc.xxgcx.munetext.uilt.MeListViewInfo;
 
 /**
