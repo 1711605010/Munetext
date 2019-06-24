@@ -24,7 +24,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Activity.RakeActivity" />
         <activity android:name=".Activity.FoodActivity" />
-        <activity android:name=".Activity.StepActivity"></activity>
+        <activity android:name=".Activity.StepActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>

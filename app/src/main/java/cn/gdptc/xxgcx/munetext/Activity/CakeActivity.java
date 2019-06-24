@@ -80,7 +80,6 @@ public class CakeActivity extends AppCompatActivity {
     class MylistAdpter extends BaseAdapter {
         @Override
         public int getCount() {
-            // TODO Auto - generated method stub
             return mydata.size();
         }
 

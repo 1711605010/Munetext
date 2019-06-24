@@ -115,8 +115,6 @@ public class HomeFragment extends Fragment {
         listViewInfos.add(new ListViewInfo(R.drawable.jizhua, "鹌鹑蛋烧鸡爪","鸡爪属于筋多肉少的类型，含有丰富的钙质及胶原蛋白，多吃不但能软化血管，同时具有美容功"));
         listViewInfos.add(new ListViewInfo(R.drawable.jirou, "蔬菜鸡胸肉","随着人们生活水平的不断提高，食物不断推新，很多小伙伴在美食面前就不禁不住诱惑了，在美"));
         listViewInfos.add(new ListViewInfo(R.drawable.jizhengu, "爽口金针菇","今天做的这道凉拌金针菇非常爽口，更是“爱辣星人”的福音。剁好的辣椒圈用热油一泼，再配"));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
-        listViewInfos.add(new ListViewInfo(R.drawable.cai, "sss",""));
         listViewAdapter = new ListViewAdapter((List<ListViewInfo>) listViewInfos, context);
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
