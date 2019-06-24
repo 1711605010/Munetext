@@ -1,6 +1,7 @@
 package cn.gdptc.xxgcx.munetext.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import cn.gdptc.xxgcx.munetext.Activity.StepActivity;
 import cn.gdptc.xxgcx.munetext.R;
 import cn.gdptc.xxgcx.munetext.uilt.RakeBean;
 
@@ -42,7 +44,12 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.Recycler
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(mContext,StepActivity.class);
+                intent.putExtra("title",dataBean.getTitle());
+                intent.putExtra("alums",dataBean.getAlbums().get(0));
+                intent.putExtra("ingredients",dataBean.getIngredients());
+                intent.putExtra("burden",dataBean.getBurden());
+                mContext.startActivity(intent);
             }
         });
     }

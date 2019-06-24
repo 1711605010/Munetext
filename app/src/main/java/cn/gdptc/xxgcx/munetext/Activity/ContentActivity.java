@@ -28,7 +28,7 @@ public class ContentActivity extends Activity {
 
         Intent intent = getIntent();
         String s = intent.getStringExtra("content").toString().trim();
-        String content = "http://apis.juhe.cn/cook/query?key=bd350292258cc5124e673cbac0755e57&menu="+s+"&rn=10&pn=1" ;
+        String content = "http://apis.juhe.cn/cook/query?key=bd350292258cc5124e673cbac0755e57&menu="+s+"&rn=50&pn=1" ;
         recyclerView =findViewById(R.id.rv_content);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(gridLayoutManager);

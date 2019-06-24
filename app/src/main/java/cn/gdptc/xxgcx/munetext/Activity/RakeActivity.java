@@ -27,9 +27,7 @@ public class RakeActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RakeActivity.this, MainActivity.class);
-                intent.putExtra("PA","1");
-                startActivity(intent);
+                finish();
             }
         });
         input = findViewById(R.id.ed_input);
