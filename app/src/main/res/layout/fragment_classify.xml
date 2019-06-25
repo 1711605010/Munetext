@@ -6,33 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.ClassifyFragment">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <q.rorbin.verticaltablayout.VerticalTabLayout
-            android:id="@+id/vtabLayout"
-            android:layout_width="66dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#EDEDED"
-            android:visibility="visible"
-            app:indicator_color="@color/colorPrimary"
-            app:indicator_gravity="left"
-            app:indicator_width="2dp"
-            app:tab_height="50dp"
-            app:tab_mode="scrollable">
+            android:orientation="horizontal">
 
-        </q.rorbin.verticaltablayout.VerticalTabLayout>
+            <q.rorbin.verticaltablayout.VerticalTabLayout
+                android:id="@+id/vtb"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:indicator_color="#FF5722" />
 
-        <fr.castorflex.android.verticalviewpager.VerticalViewPager
-            android:id="@+id/viewpager"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="4">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vtbvp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        </fr.castorflex.android.verticalviewpager.VerticalViewPager>
+            </android.support.v4.view.ViewPager>
 
+        </LinearLayout>
     </LinearLayout>
 
 
