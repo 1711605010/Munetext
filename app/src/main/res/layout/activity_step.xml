@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Activity.StepActivity">
+    android:layout_height="match_parent">
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity.StepActivity">
 
 
         <ImageView
@@ -15,68 +18,75 @@
             android:layout_height="200dp"
             android:src="@drawable/jichi" />
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="蜜汁鸡翅"
-        android:textColor="@android:color/black"
-        android:textSize="32sp" />
-<LinearLayout
-    android:layout_marginRight="15dp"
-    android:layout_marginLeft="15dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="原料："
-        android:textSize="20sp"/>
-    <TextView
-        android:id="@+id/tv_ingredients"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="鲜土地鸡,半只"
-        android:textSize="18sp"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="蜜汁鸡翅"
+            android:textColor="@android:color/black"
+            android:textSize="32sp" />
+
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原料："
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="鲜土地鸡,半只"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="配料："
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/tv_burden"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="油,适量;盐,适量;葱头,适量;芝麻油,适量;生姜,适量;生抽,适量;白糖,适量"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
-                android:textSize="18sp"/>
+                android:layout_marginTop="5dp"
+                android:text="油,适量;盐,适量;葱头,适量;芝麻油,适量;生姜,适量;生抽,适量;白糖,适量"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="做法："
             android:layout_marginLeft="15dp"
-            android:textSize="20sp"/>
+            android:text="做法："
+            android:textSize="20sp" />
 
         <ListView
             android:id="@+id/lv_step"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="4500dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
 
-        </ListView>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

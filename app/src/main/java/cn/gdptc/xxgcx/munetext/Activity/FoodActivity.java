@@ -23,9 +23,7 @@ public class FoodActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FoodActivity.this, MainActivity.class);
-                intent.putExtra("PA","1");
-                startActivity(intent);
+                finish();
             }
         });
     }
