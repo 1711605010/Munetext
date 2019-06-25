@@ -6,66 +6,6 @@
     tools:context=".Fragment_video.KuaishouFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou1" />
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou2" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou3" />
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou4" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="300dp"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou5" />
-
-                <ImageView
-                    android:layout_width="206dp"
-                    android:layout_height="300dp"
-                    android:background="@drawable/kuaishou6" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 
 </FrameLayout>
