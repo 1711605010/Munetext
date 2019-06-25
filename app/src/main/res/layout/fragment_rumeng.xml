@@ -24,12 +24,12 @@
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian1" />
+                    android:background="@drawable/kuaishou1" />
 
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian2" />
+                    android:background="@drawable/kuaishou2" />
             </LinearLayout>
 
             <LinearLayout
@@ -41,12 +41,12 @@
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian3" />
+                    android:background="@drawable/kuaishou3" />
 
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian4" />
+                    android:background="@drawable/kuaishou4" />
             </LinearLayout>
 
             <LinearLayout
@@ -58,12 +58,12 @@
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian5" />
+                    android:background="@drawable/kuaishou5" />
 
                 <ImageView
                     android:layout_width="206dp"
                     android:layout_height="300dp"
-                    android:background="@drawable/tuijian6" />
+                    android:background="@drawable/kuaishou6" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
