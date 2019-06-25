@@ -2,6 +2,8 @@ package cn.gdptc.xxgcx.munetext.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,10 +47,8 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.Recycler
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext,StepActivity.class);
-                intent.putExtra("title",dataBean.getTitle());
-                intent.putExtra("alums",dataBean.getAlbums().get(0));
-                intent.putExtra("ingredients",dataBean.getIngredients());
-                intent.putExtra("burden",dataBean.getBurden());
+                Bundle bundle = new Bundle();
+                intent.putExtra("bean",dataBean);
                 mContext.startActivity(intent);
             }
         });
