@@ -3,6 +3,7 @@ package cn.gdptc.xxgcx.munetext.Fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -60,7 +61,18 @@ public class MeFragment extends Fragment {
         listViewInfos.add(new MeListViewInfo(R.drawable.lianxi,"联系我们",R.drawable.youjiantou));
         listViewAdapter = new MeListViewAdapter((LinkedList<MeListViewInfo>) listViewInfos,context);
         listView.setAdapter(listViewAdapter);
+
+        if(islogin()){
+            //登陆成功后跳转
+
+        }else {
+            //登陆失败
+        }
         return view;
     }
-
+    public boolean islogin(){
+        SharedPreferences sharedPreferences=getActivity().getSharedPreferences("flag",Context.MODE_PRIVATE);
+        boolean islogin = sharedPreferences.getBoolean("islogin", false);
+        return islogin;
+    }
 }

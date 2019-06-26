@@ -59,10 +59,10 @@ public class ClassifyFragment extends Fragment {
         datas.add("功效");
         datas.add("场景");
         datas.add("工艺口味");
-//适配器
+
         vpsp vpsp = new vpsp(getActivity().getSupportFragmentManager());
         vtbvp.setAdapter(vpsp);
-////进行关联
+
         vtb.setupWithViewPager(vtbvp);
 
     }
@@ -73,12 +73,11 @@ public class ClassifyFragment extends Fragment {
             super(fm);
         }
 
-        //返回选项卡的文本 ，，，添加选项卡
         @Override
         public CharSequence getPageTitle(int position) {
             return datas.get(position);
         }
-        //创建fragment对象并返回
+
         @Override
         public Fragment getItem(int position) {
             Vcount vcount = new Vcount();
@@ -86,7 +85,7 @@ public class ClassifyFragment extends Fragment {
             bundle.putString("name",datas.get(position));
             vcount.setArguments(bundle);
             return vcount;        }
-        //返回数量
+
         @Override
         public int getCount() {
             return datas.size();
@@ -100,7 +99,7 @@ public class ClassifyFragment extends Fragment {
             View inflate = View.inflate(getActivity(), R.layout.test_layout, null);
             View jiacai = inflate.findViewById(R.id.jiacai);
             View kuaishou = inflate.findViewById(R.id.kuaishou);
-            View chuangyi = inflate.findViewById(R.id.chaugnyi);
+            View sucai = inflate.findViewById(R.id.sucai);
 
             jiacai.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -120,11 +119,11 @@ public class ClassifyFragment extends Fragment {
                 }
             });
 
-            chuangyi.setOnClickListener(new View.OnClickListener() {
+            sucai.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getActivity(),ContentActivity.class);
-                    intent.putExtra("content","创意菜");
+                    intent.putExtra("content","素菜");
                     startActivity(intent);
                 }
             });

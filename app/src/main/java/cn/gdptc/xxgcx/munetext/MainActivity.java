@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,11 +27,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent= getIntent();
+        Intent intent = getIntent();
+        String touji = intent.getStringExtra("touji");
+        if ( touji != null) {
+            radioGroup.check(R.id.rb_me);
+        }
+        Intent intent1 = getIntent();
         String PS = intent.getStringExtra("PS");
         if ( PS != null) {
             radioGroup.check(R.id.rb_me);
-
         }
 
         initView();
@@ -55,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         radioGroup.check(R.id.rb_video);
-                        tv_main_title.setText("视频");
+                        tv_main_title.setText("图片");
                         break;
                     case 2:
                         radioGroup.check(R.id.rb_classify);
@@ -116,5 +121,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         viewPager.setCurrentItem(0);
+    }
+
+
+    static  String username;
+
+    public void Loginsuccesslitning(String username) {
+        this.username=username;
+        Toast.makeText(this, username, Toast.LENGTH_SHORT).show();
     }
 }

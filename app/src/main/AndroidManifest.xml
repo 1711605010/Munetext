@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity.RegisterActivity"></activity>
         <activity android:name=".Activity.ContentActivity" />
         <activity android:name=".Activity.CakeActivity" />
         <activity android:name=".Activity.ColdActivity" />
@@ -25,7 +26,7 @@
         <activity android:name=".Activity.RakeActivity" />
         <activity android:name=".Activity.FoodActivity" />
         <activity android:name=".Activity.StepActivity" />
-        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.LoginActivity" />
     </application>
 
 </manifest>
