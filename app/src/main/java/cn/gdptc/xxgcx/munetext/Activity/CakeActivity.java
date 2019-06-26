@@ -36,22 +36,28 @@ public class CakeActivity extends AppCompatActivity {
         initView();
         mydata=new ArrayList<Software>();
         Software data1 = new Software();
-        data1.logo= R.drawable.xiaren;
-        data1.title= "微信";
-        data1.content="微信 是腾讯公司推出的供即时通讯服务的免费应用程序。";
+        data1.logo= R.drawable.hongpei1;
+        data1.title= "黑穗醋栗仙女蛋糕卷";
+        data1.content="最近入了一个很神奇的宝贝，它叫黑穗醋栗，百度了一下，不仅有丰富的维生素，还能够增强孩子的免疫力，重点是颜值超高";
         mydata.add(data1);
 
         Software data2 = new Software();
-        data2.logo=R.drawable. xiaren ;
-        data2.title= "易信";
-        data2.content="易信是由网易和中国电信联合开发的一款免费聊天软件。";
+        data2.logo=R.drawable. hongpei2 ;
+        data2.title= "黄桃千层蛋糕卷";
+        data2.content="一到夏天，就想吃些清凉的甜品，有什么既好吃，又不用烤箱，也不必打发鸡蛋，就能做的甜品吗？那就试试这款“黄桃千层”";
         mydata.add(data2);
 
         Software data3 = new Software();
-        data3.logo=R.drawable. xiaren ;
-        data3.title= "米聊";
-        data3.content="米聊是小米科技出品的一款免费即时通讯工具。";
+        data3.logo=R.drawable.hongpei3 ;
+        data3.title= "蛋挞";
+        data3.content="蛋挞源于香港，在香港茶餐厅将之发扬光大。蛋挞自上世纪五十年代，开始进驻香港大小餐厅，成为香港人喜爱的美点。葡式";
         mydata.add(data3);
+
+        Software data4 = new Software();
+        data4.logo=R.drawable.hongpei4 ;
+        data4.title= "马卡龙";
+        data4.content="今天来一份誉满全球、超高人气、甜酥无比的小西点“马卡龙”。马卡龙，又称作玛卡龙、杏仁小圆饼，哪一个“称号”更具诱惑呢？";
+        mydata.add(data4);
 
         MylistAdpter mylistAdpter = new MylistAdpter();
         ListView  mylistview = (ListView)findViewById(R.id.list_cake);
