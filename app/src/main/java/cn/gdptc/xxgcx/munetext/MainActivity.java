@@ -27,17 +27,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = getIntent();
-        String touji = intent.getStringExtra("touji");
-        if ( touji != null) {
-            radioGroup.check(R.id.rb_me);
-        }
-        Intent intent1 = getIntent();
-        String PS = intent.getStringExtra("PS");
-        if ( PS != null) {
-            radioGroup.check(R.id.rb_me);
-        }
-
         initView();
         initViewPager();
         initListener();
