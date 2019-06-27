@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -16,6 +17,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 
+import cn.gdptc.xxgcx.munetext.Activity.CollectActivity;
+import cn.gdptc.xxgcx.munetext.Activity.FoodActivity;
 import cn.gdptc.xxgcx.munetext.Adapter.MeListViewAdapter;
 import cn.gdptc.xxgcx.munetext.Activity.LoginActivity;
 import cn.gdptc.xxgcx.munetext.R;
@@ -60,6 +63,16 @@ public class MeFragment extends Fragment {
         listViewInfos.add(new MeListViewInfo(R.drawable.lianxi,"联系我们",R.drawable.youjiantou));
         listViewAdapter = new MeListViewAdapter((LinkedList<MeListViewInfo>) listViewInfos,context);
         listView.setAdapter(listViewAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i == 0) {
+                    Intent intent = new Intent(getActivity(), CollectActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
 
 
         return view;

@@ -100,6 +100,14 @@ public class ClassifyFragment extends Fragment {
             View jiacai = inflate.findViewById(R.id.jiacai);
             View kuaishou = inflate.findViewById(R.id.kuaishou);
             View sucai = inflate.findViewById(R.id.sucai);
+            View liangcai = inflate.findViewById(R.id.liangcai);
+            View hongbei = inflate.findViewById(R.id.hongbei);
+            View tang = inflate.findViewById(R.id.tang);
+            View xiaochi = inflate.findViewById(R.id.xiaochi);
+            View qingdan = inflate.findViewById(R.id.qingdan);
+            View mianshi = inflate.findViewById(R.id.mianshi);
+
+
 
             jiacai.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -124,6 +132,54 @@ public class ClassifyFragment extends Fragment {
                 public void onClick(View v) {
                     Intent intent = new Intent(getActivity(),ContentActivity.class);
                     intent.putExtra("content","素菜");
+                    startActivity(intent);
+                }
+            });
+            liangcai.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","凉菜");
+                    startActivity(intent);
+                }
+            });
+            hongbei.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","烘焙");
+                    startActivity(intent);
+                }
+            });
+            tang.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","汤");
+                    startActivity(intent);
+                }
+            });
+            xiaochi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","小吃");
+                    startActivity(intent);
+                }
+            });
+            mianshi.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","面");
+                    startActivity(intent);
+                }
+            });
+            qingdan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getActivity(),ContentActivity.class);
+                    intent.putExtra("content","清淡");
                     startActivity(intent);
                 }
             });
